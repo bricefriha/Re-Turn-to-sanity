@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace re_turn_my_sanity
+namespace ReTurnMySanity
 {
     [Application]
     public class MainApplication : MauiApplication

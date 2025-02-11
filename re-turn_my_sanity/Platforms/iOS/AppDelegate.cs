@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace re_turn_my_sanity
+namespace ReTurnMySanity
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

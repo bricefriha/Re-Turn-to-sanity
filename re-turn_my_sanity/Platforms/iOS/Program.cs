@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace re_turn_my_sanity
+namespace ReTurnMySanity
 {
     public class Program
     {
