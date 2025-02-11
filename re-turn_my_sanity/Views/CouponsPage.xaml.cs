@@ -9,4 +9,9 @@ public partial class CouponsPage : ContentPage
 		InitializeComponent();
 		BindingContext = new CouponsViewModel();
 	}
+
+    private async void AddButton_Clicked(object sender, EventArgs e)
+    {
+		await Navigation.PushAsync(new ScanPage());
+    }
 }
