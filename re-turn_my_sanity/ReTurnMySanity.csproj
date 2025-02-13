@@ -75,10 +75,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <None Update="Views\CouponsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>

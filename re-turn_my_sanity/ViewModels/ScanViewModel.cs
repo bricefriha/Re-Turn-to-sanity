@@ -1,4 +1,6 @@
-﻿namespace ReTurnMySanity.ViewModels;
+﻿using ReTurnMySanity.Models;
+
+namespace ReTurnMySanity.ViewModels;
 
 public sealed class ScanViewModel : BaseViewModel
 {
@@ -13,8 +15,9 @@ public sealed class ScanViewModel : BaseViewModel
         {
             _scanned = value;
             OnPropertyChanged(nameof(Scanned));
-        }
+        } 
     }
+    public Voucher VoucherScanned { get; set; }
 
     public ScanViewModel() 
     {

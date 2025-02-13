@@ -1,3 +1,4 @@
+using ReTurnMySanity.Models;
 using ReTurnMySanity.ViewModels;
 using ZXing.Net.Maui;
 
@@ -23,5 +24,14 @@ public partial class ScanPage : ContentPage
     private void cameraBarcodeReaderView_BarcodesDetected(object sender, ZXing.Net.Maui.BarcodeDetectionEventArgs e)
     {
         _vm.Scanned = true;
+        
+        if (e?.Results?.Count() <= 0)
+            return;
+
+        string result = e!.Results[0].Value;
+        _vm.VoucherScanned = new Voucher() 
+        {
+            Value = result
+        };
     }
 }

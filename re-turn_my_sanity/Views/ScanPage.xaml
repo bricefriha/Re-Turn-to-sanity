@@ -11,7 +11,8 @@
         <toolkit:InvertedBoolConverter x:Key="invertBool" />
     </ContentPage.Resources>
     <VerticalStackLayout
-                IsVisible="{Binding Path=Scanned, Converter={StaticResource invertBool}}">
+                IsVisible="{Binding Path=Scanned, 
+                                    Converter={StaticResource invertBool}}">
         <zxing:CameraBarcodeReaderView
                 x:Name="cameraBarcodeReaderView"
                 BarcodesDetected="cameraBarcodeReaderView_BarcodesDetected"/>
